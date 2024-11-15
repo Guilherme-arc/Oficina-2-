@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    background: linear-gradient(135deg, #e0f7fa, #a7ffeb); /* Gradiente azul claro para verde claro */
+    color: #333;
+}
+
+header {
+    background: #00796b; /* Verde escuro */
+    padding: 1.5em;
+    text-align: center;
+    color: #f0fdfc;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+nav ul li {
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0fdfc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4db6ac; /* Verde água */
+}
+
+main {
+    padding: 2em;
+}
+
+h2 {
+    color: #00796b;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.gallery figure {
+    max-width: 300px; /* Limite da largura das figuras */
+    text-align: center;
+    margin-bottom: 2em; /* Espaço entre as imagens */
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+footer {
+    background: #00796b; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.2em;
+    z-index: 1000;
+}
+
+body {
+    margin-bottom: 60px; /* Espaço para não sobrepor o conteúdo com o footer fixo */
+}
